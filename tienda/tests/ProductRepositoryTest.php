@@ -45,7 +45,7 @@ final class ProductRepositoryTest extends TestCase
         $this->assertSame('CAF-0001', $f[0]['sku']);
     }
 
-    public function testFormatoMoneda(): void
+    function testFormatoMoneda(): void
     {
         $this->assertSame('$1,234.50 MXN', ProductRepository::money(1234.5));
     }
