@@ -32,7 +32,7 @@ final class ValidacionesTest extends TestCase
     public static function emailInvalidos(): array
     {
         return [
-            'sin arroba' => ['anacorreo.com'],
+            'sin arroba' => ['ana@correo.com'],
             'sin dominio' => ['ana@'],
             'sin usuario' => ['@correo.com'],
             'vacío'       => [''],
