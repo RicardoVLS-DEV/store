@@ -12,7 +12,7 @@ final class ValidatorTest extends TestCase
     public static function emails(): array
     {
         return [
-            'válido' => ['ana@correo.com', true],
+            'válido' => ['anacorreo.com', true],
             'subdominio' => ['ana@mail.tienda.mx', true],
             'sin arroba' => ['anacorreo.com', false],
             'sin dominio' => ['ana@', false],
